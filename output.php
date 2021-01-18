@@ -27,7 +27,7 @@ include_once __DIR__ . '/classi/Tech.php';
         <?php
             $food = new Food(
             'Riso Basmati', 
-            'Food', 
+            'f', 
             'Il suo nome in hindi significa "Regina di fragranza", "Ricco di aroma innato" e deriva dal sanscrito vasaymayup (vasay: aroma; mayup: intriso). Successivamente divenne vasumati nelle lingue pracrite, e infine basmati che conosciamo oggi.', 
             '12.99', 
             'India', 
@@ -44,7 +44,7 @@ include_once __DIR__ . '/classi/Tech.php';
         <h3>
             Category:
             <?php
-            echo $food->category;
+            echo $food->getCategory();
             ?>
         </h3>
         <p>
@@ -81,7 +81,7 @@ include_once __DIR__ . '/classi/Tech.php';
         <?php
             $tech = new Tech(
             'Apple Macbook Pro M1', 
-            'Tech', 
+            't', 
             'Ti presentiamo il nuovo MacBook Air: il nostro portatile più sottile e leggero, completamente trasformato dal chip Apple M1. CPU fino a 3,5 volte più veloce. GPU fino a 5 volte più scattante. Il Neural Engine più evoluto di sempre, che assicura performance di machine learning fino a 9 volte migliori. Un’autonomia che su un MacBook Air non si era mai vista. E una tecnologia silenziosa, perché senza ventola. Ha una potenza senza precedenti, ed è pronto a seguirti ovunque.', 
             '1299.99', 
             'Apple Inc. Sylicon Valley CA (USA)', 
@@ -98,7 +98,7 @@ include_once __DIR__ . '/classi/Tech.php';
         <h3>
             Category:
             <?php
-            echo $tech->category;
+            echo $tech->getCategory();
             ?>
         </h3>
         <p>

@@ -23,6 +23,15 @@ class Product {
 
         return number_format($sconto, 2) . '$';
     }
+
+    public function getCategory() {
+        if ($this->category === 'f') {
+            return 'Food';
+        } 
+        elseif ($this->category === 't') {
+            return 'Tech';
+        }
+    }
 }
 
 ?>
